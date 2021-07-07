@@ -26,16 +26,16 @@ export class UserController {
     }
 
     // post方法在Postman工具中进行模拟
-    // @Post('create') 
-    // create() {
-    //     console.log('触发了Post方法');
-    //     return '我是Post方法';
-    // }
+    @Post('create') 
+    create() {
+        console.log('触发了Post方法');
+        return '我是Post方法';
+    }
 
     // 获取Post传值————通过@Body装饰器获取
-    // http://localhost:3000/user/create
-    @Post('create') 
-    create(@Body() body) {
+    // http://localhost:3000/user/creates
+    @Post('creates') 
+    creates(@Body() body) {
         console.log('触发了post方法');//{ type: 'pop', page: '1', name: 'zhangsan', age: '20' }
         console.log(body);
         return '我是Post方法';

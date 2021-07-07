@@ -7,7 +7,7 @@ export class NewsController {
     // 路由模糊匹配
     @Get('a*a')
     indexA() {
-        return '新闻也，路由模糊匹配    '
+        return '新闻页，路由模糊匹配'
     }
 
 
